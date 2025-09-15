@@ -16,18 +16,17 @@ The goal is to demonstrate SQL querying skills and extract actionable business i
 ## 🔑 Key Insights
 
 ### 1. Overall Sales & Profit
-- Total Sales: **$X,XXX,XXX**
-- Total Profit: **$XXX,XXX**
-- Overall Profit Margin: **X%**
+- Total Sales: **$2,297,200**
+- Total Profit: **$286,397**
+- Overall Profit Margin: **12.5%**
 
 ➡️ *The company is profitable, but margins vary widely by category and region.*
 
 ---
 
 ### 2. Monthly Sales Trend
-- Peak sales in **Month(s)**.
-- Lowest sales in **Month(s)**.
-- Noticeable **seasonal pattern/steady growth/decline**.
+- Peak sales in **September and November**.
+- Lowest sales in **February**.
 
 ![Monthly Sales Trend](visuals/monthly_sales_trend.png)
 
@@ -36,8 +35,8 @@ The goal is to demonstrate SQL querying skills and extract actionable business i
 ---
 
 ### 3. Top Customers
-- **Customer A** contributed **$XX,XXX** in sales.
-- Top 10 customers account for **X% of total revenue**.
+- **Customer SM-20320** contributed **$25,000** in sales.
+- Top 10 customers account for **6.6% of total revenue**.
 
 ![Top Customers](visuals/top_customers.png)
 
@@ -45,23 +44,13 @@ The goal is to demonstrate SQL querying skills and extract actionable business i
 
 ---
 
-### 4. Top Products
-- **Product A** generated **$XX,XXX** in revenue.
-- Certain categories (e.g., Technology) outperform others.
-
-![Top Products](visuals/top_products.png)
-
-➡️ *High-performing products should be prioritized in inventory and promotions.*
-
----
-
-### 5. Regional Performance
+### 4. Regional Performance
 | Region | Sales | Profit |
 |----------|------------|------------|
-| West | $XXX,XXX | $XX,XXX |
-| East | $XXX,XXX | $XX,XXX |
-| Central | $XXX,XXX | $XX,XXX |
-| South | $XXX,XXX | $XX,XXX |
+| West | $725,000 | $108,000 |
+| East | $679,000 | $92,000 |
+| Central | $501,000 | $40000 |
+| South | $392000 | $47000 |
 
 ➡️ *The **West** region leads in both sales and profitability, while the **South** underperforms.*
 
@@ -69,5 +58,4 @@ The goal is to demonstrate SQL querying skills and extract actionable business i
 
 ## 🚀 Recommendations
 1. Focus on **high-performing customers** with loyalty programs.
-2. Expand **technology category** products, as they yield higher profit margins.
-3. Allocate more resources to the **West region** where performance is strongest.
+2. Allocate more resources to the **West region** where performance is strongest.
