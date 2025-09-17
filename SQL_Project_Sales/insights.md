@@ -21,7 +21,7 @@ The goal is to demonstrate SQL querying skills and extract actionable business i
 - Peak sales in **September and November**.
 - Lowest sales in **February**.
 
-![Monthly Sales Trend](visuals/monthly_sales_trend.png)
+![Monthly Sales Trend](visuals/monthly_sales.png)
 
 ➡️ *Sales are strongest in Q4, suggesting reliance on holiday demand.*
 
