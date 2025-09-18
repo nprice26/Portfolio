@@ -1,1 +1,54 @@
+/* -----------------------------------------------------
 
+   1. Ravens Total Wins 2012-2024
+
+   ----------------------------------------------------- */
+SELECT
+  team, SUM(win) AS total_wins, 
+
+FROM
+  `nfl-analysis-472419.nfldata.nfl_offense`
+
+WHERE season BETWEEN 2012 AND 2024 AND team = "BAL"
+GROUP BY team
+ORDER BY total_wins DESC
+/* -----------------------------------------------------
+
+   2. Ravens points per game
+
+   ----------------------------------------------------- */  
+SELECT 
+  season, (total_off_points+total_def_points)/16 AS points_per_game
+FROM
+  `nfl-analysis-472419.nfldata.nfl_offense`
+
+WHERE
+  team = "BAL" AND season_type = "REG"
+GROUP BY season, points_per_game
+ORDER BY season ASC
+/* -----------------------------------------------------
+
+   3. Offense yds to Wins
+
+   ----------------------------------------------------- */
+SELECT
+  season,rushing_yards, passing_yards, win
+
+FROM
+  `nfl-analysis-472419.nfldata.nfl_offense`
+
+WHERE team = "BAL" AND season_type = "REG"
+ORDER BY season DESC
+/* -----------------------------------------------------
+
+   4. Defensive Impact
+
+   ----------------------------------------------------- */
+SELECT
+  team, season, interception+fumble_forced AS turnovers_forced, win
+
+FROM 
+  `nfl-analysis-472419.nfldata.Team Defense Stats` 
+
+WHERE team = "BAL" AND season_type = "REG"
+ORDER BY season DESC
